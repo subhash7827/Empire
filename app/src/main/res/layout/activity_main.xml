@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/design_default_color_secondary_variant"
+        >
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="195dp"
+            android:layout_height="260dp"
+            android:layout_gravity="center_horizontal"
+            app:circularflow_defaultRadius="@dimen/cardview_default_radius"
+            app:srcCompat="@drawable/me"
+            android:contentDescription="@string/picture"
+            android:layout_marginStart="100dp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_margin="10dp"
+        android:textAlignment="center"
+        android:layout_gravity="center_horizontal"
+
+        >
+        <Button
+            android:text="@string/prev"
+            android:id="@+id/prev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="musicprev"
+            android:background="#ff0000"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@android:drawable/ic_media_previous" />
+
+        <Button
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#00dd00"
+            android:onClick="musicplay"
+            android:text="@string/play"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@android:drawable/ic_media_play" />
+
+        <Button
+            android:text="@string/pause"
+            android:id="@+id/pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="musicpause"
+            android:background="#ddaa99"
+            android:layout_marginEnd="10dp"
+            app:srcCompat="@android:drawable/ic_media_pause" />
+        <Button
+            android:id="@+id/next"
+            android:text="@string/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="musicnext"
+            android:background="#0000aa"
+            app:srcCompat="@android:drawable/ic_media_next" />
+
+
+    </LinearLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>
+
+

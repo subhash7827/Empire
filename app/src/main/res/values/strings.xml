@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Empire</string>
+    <string name="picture">Photo</string>
+    <string name="play">Play</string>
+    <string name="prev">Prev</string>
+    <string name="next">Next</string>
+    <string name="pause">Pause</string>
+    <string name="stop">Stop</string>
+
+</resources>
