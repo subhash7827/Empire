@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         public void musicplay(View v)
         {
-            String str ="Now Playing song"+(x-R.raw.song5+1);
+            String str ="Now Playing song"+(x-R.raw.song1+1);
             Toast.makeText(this, str, Toast.LENGTH_LONG).show();
             music.start();
         }
@@ -48,15 +48,15 @@ public class MainActivity extends AppCompatActivity {
         public void musicnext(View v)
         {
             music.stop();
-            if (x==R.raw.song12)
+            if (x==R.raw.song3)
             {
-                x=R.raw.song5;
+                x=R.raw.song1;
             }
             x++;
             music = MediaPlayer.create(
                     this, x);
 
-            String str ="Now Playing song"+(x-R.raw.song5);
+            String str ="Now Playing song"+(x-R.raw.song1);
             Toast.makeText(this, str, Toast.LENGTH_LONG).show();
             music.start();
         }
@@ -64,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
         {
             if (music.getCurrentPosition()+3000>=music.getDuration())
             {
-                if (x == R.raw.song12) {
-                    x = R.raw.song5;
+                if (x == R.raw.song3) {
+                    x = R.raw.song1;
                 }
                 x++;
                 music = MediaPlayer.create(
                         this, x);
 
-                String str ="Now Playing song"+(x-R.raw.song5);
+                String str ="Now Playing song"+(x-R.raw.song1);
                 Toast.makeText(this, str, Toast.LENGTH_LONG).show();
                 music.start();
             }
@@ -79,15 +79,15 @@ public class MainActivity extends AppCompatActivity {
          public void musicprev(View v)
         {
             music.stop();
-            if (x==R.raw.song5)
+            if (x==R.raw.song1)
             {
-                x=R.raw.song12;
+                x=R.raw.song3;
             }
             x--;
             music = MediaPlayer.create(
                     this, x);
 
-            String str ="Now Playing song"+(x-R.raw.song5);
+            String str ="Now Playing song"+(x-R.raw.song1);
             Toast.makeText(this, str, Toast.LENGTH_LONG).show();
             music.start();
         }
