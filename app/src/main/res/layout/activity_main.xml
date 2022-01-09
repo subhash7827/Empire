@@ -71,7 +71,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="musicpause"
-            android:background="#400"
+            android:background="#600"
             android:layout_marginEnd="10dp"
             app:srcCompat="@android:drawable/ic_media_pause" />
         <Button
