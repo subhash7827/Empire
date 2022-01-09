@@ -45,7 +45,7 @@
         android:layout_gravity="center_horizontal"
 
         >
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:text="@string/prev"
             android:id="@+id/prev"
             android:layout_width="wrap_content"
@@ -55,7 +55,7 @@
             android:layout_marginEnd="10dp"
             app:srcCompat="@android:drawable/ic_media_previous" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -65,7 +65,7 @@
             android:layout_marginEnd="10dp"
             app:srcCompat="@android:drawable/ic_media_play" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:text="@string/pause"
             android:id="@+id/pause"
             android:layout_width="wrap_content"
@@ -74,13 +74,14 @@
             android:background="#ddaa99"
             android:layout_marginEnd="10dp"
             app:srcCompat="@android:drawable/ic_media_pause" />
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/next"
             android:text="@string/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="musicnext"
             android:background="#0000aa"
+            android:textColor="@color/white"
             app:srcCompat="@android:drawable/ic_media_next" />
 
 
